@@ -126,7 +126,7 @@ export function Swimlanes({ data, windowMs, compact = false, highlight }: { data
                         fill={review ? "url(#hatch)" : color} fillOpacity={review ? 1 : 0.2} stroke={color} strokeOpacity={0.9} strokeWidth={1} />
                       {live && <rect x={x1 - 3} y={barY} width={3} height={barH} rx={1.5} fill="var(--signal)"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" /></rect>}
                       {w > 70 && !compact && <text x={x0 + 7} y={barY + barH / 2 + 3.5} fontSize={10.5} fontFamily="var(--font-mono)" fill="var(--ink)" style={{ pointerEvents: "none" }}>
-                        #{r.problem_id} {r.title.length > w / 7 ? r.title.slice(0, Math.max(0, Math.floor(w / 7) - 6)) + "…" : r.title}
+                        #{r.problem_id} {(r.title ?? "").length > w / 7 ? (r.title ?? "").slice(0, Math.max(0, Math.floor(w / 7) - 6)) + "…" : (r.title ?? "")}
                       </text>}
                       {r.outcome && <circle cx={x1} cy={barY + barH / 2} r={4.5} fill={r.outcome.startsWith("review:accept") || r.outcome === "solved" || r.outcome === "disproved" ? "var(--c6)" : r.outcome === "partial" ? "var(--c3)" : r.outcome.startsWith("review") ? "var(--c4)" : "var(--ink-3)"} stroke="var(--panel)" strokeWidth={2} />}
                     </g>
