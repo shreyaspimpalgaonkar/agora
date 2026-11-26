@@ -1,0 +1,107 @@
+/* Agora design tokens. Light "paper instrument" by default, a dark "night shift" variant. */
+:root {
+  color-scheme: light;
+  --bg: #efeee9;
+  --bg-grid: rgba(18, 19, 16, 0.07);
+  --panel: #f7f6f2;
+  --panel-2: #fbfaf7;
+  --sunken: #e7e5df;
+  --ink: #121310;
+  --ink-2: #4e4f49;
+  --ink-3: #85857d;
+  --ink-4: #b4b3ab;
+  --line: #d6d4cc;
+  --line-2: #e3e1da;
+  --signal: #ff4a1c;
+  --signal-ink: #c2330e;
+  --signal-wash: rgba(255, 74, 28, 0.1);
+  --focus: #2a78d6;
+
+  /* status: reserved for state, always paired with an icon and a label */
+  --good: #0ca30c;
+  --good-ink: #067806;
+  --warning: #fab219;
+  --warning-ink: #8a5d00;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+
+  /* categorical slots (validated: dataviz palette, light surface #f6f5f1) */
+  --c1: #2a78d6;
+  --c2: #eb6834;
+  --c3: #1baf7a;
+  --c4: #eda100;
+  --c5: #e87ba4;
+  --c6: #008300;
+  --c7: #4a3aa7;
+  --c8: #e34948;
+
+  --font-sans: "Geist Variable", "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono Variable", "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-serif: "Instrument Serif", "Times New Roman", serif;
+  --font-dots: "Doto", var(--font-mono);
+
+  --r-1: 6px;
+  --r-2: 10px;
+  --r-3: 14px;
+  --shadow-pop: 0 1px 0 rgba(18, 19, 16, 0.04), 0 12px 32px -12px rgba(18, 19, 16, 0.25);
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f100e;
+    --bg-grid: rgba(236, 235, 230, 0.06);
+    --panel: #161714;
+    --panel-2: #1b1c19;
+    --sunken: #0b0c0a;
+    --ink: #ecebe6;
+    --ink-2: #b9b8b0;
+    --ink-3: #85857d;
+    --ink-4: #55554f;
+    --line: #2c2d29;
+    --line-2: #222320;
+    --signal: #ff5a2c;
+    --signal-ink: #ff7a52;
+    --signal-wash: rgba(255, 90, 44, 0.13);
+    --good-ink: #39c339;
+    --warning-ink: #fab219;
+    --c1: #3987e5;
+    --c2: #d95926;
+    --c3: #199e70;
+    --c4: #c98500;
+    --c5: #d55181;
+    --c6: #008300;
+    --c7: #9085e9;
+    --c8: #e66767;
+    --shadow-pop: 0 1px 0 rgba(0, 0, 0, 0.3), 0 16px 40px -12px rgba(0, 0, 0, 0.7);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f100e;
+  --bg-grid: rgba(236, 235, 230, 0.06);
+  --panel: #161714;
+  --panel-2: #1b1c19;
+  --sunken: #0b0c0a;
+  --ink: #ecebe6;
+  --ink-2: #b9b8b0;
+  --ink-3: #85857d;
+  --ink-4: #55554f;
+  --line: #2c2d29;
+  --line-2: #222320;
+  --signal: #ff5a2c;
+  --signal-ink: #ff7a52;
+  --signal-wash: rgba(255, 90, 44, 0.13);
+  --good-ink: #39c339;
+  --warning-ink: #fab219;
+  --c1: #3987e5;
+  --c2: #d95926;
+  --c3: #199e70;
+  --c4: #c98500;
+  --c5: #d55181;
+  --c6: #008300;
+  --c7: #9085e9;
+  --c8: #e66767;
+  --shadow-pop: 0 1px 0 rgba(0, 0, 0, 0.3), 0 16px 40px -12px rgba(0, 0, 0, 0.7);
+}

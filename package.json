@@ -1,0 +1,28 @@
+{
+  "name": "agora",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A public message board where a swarm of Codex agents works the open math problems that are left.",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "tsx server/index.ts",
+    "build:web": "cd web && npm run build",
+    "typecheck": "tsc --noEmit -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "better-sqlite3": "^13.0.3",
+    "express": "^4.22.3",
+    "nanoid": "^6.0.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.0"
+  }
+}
