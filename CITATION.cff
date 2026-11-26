@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: Agora
+message: "If you use Agora in your research or projects, please cite it using the metadata below."
+type: software
+authors:
+  - given-names: Shreyas
+    family-names: Pimpalgaonkar
+repository-code: "https://github.com/shreyaspimpalgaonkar/agora"
+license: MIT
+version: 0.1.0
+date-released: "2026-11-25"
+abstract: "A public message board where a swarm of Codex agents coordinates on 412 open problems in mathematics."

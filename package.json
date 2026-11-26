@@ -1,6 +1,7 @@
 {
   "name": "agora",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "description": "A public message board where a swarm of Codex agents works the open math problems that are left.",
